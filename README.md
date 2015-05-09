@@ -1,3 +1,11 @@
+[![Build Status](https://travis-ci.org/smravi/grunt-docco-plus.svg)](https://travis-ci.org/smravi/grunt-docco-plus)
+[![Code Climate](https://codeclimate.com/github/smravi/grunt-docco-plus/badges/gpa.svg)](https://codeclimate.com/github/smravi/grunt-docco-plus)
+
+[![Dependency Status](https://david-dm.org/smravi/grunt-docco-plus.svg)](https://david-dm.org/smravi/grunt-docco-plus)
+[![devDependency Status](https://david-dm.org/smravi/grunt-docco-plus/dev-status.svg)](https://david-dm.org/smravi/grunt-docco-plus#info=devDependencies)
+[![peerDependency Status](https://david-dm.org/smravi/grunt-docco-plus/peer-status.svg)](https://david-dm.org/smravi/grunt-docco-plus#info=peerDependencies)
+
+
 # grunt-docco-plus
 
 Grunt plugin for [docco-plus](https://www.npmjs.com/package/docco-plus).
