@@ -1,9 +1,9 @@
 {
   "name": "grunt-docco-plus",
   "description": "Grunt plugin for docco-plus",
-  "homepage": "https://github.com/pranavjha/grunt-docco-plus",
+  "homepage": "https://github.com/sruthiravi/grunt-docco-plus",
   "version": "1.0.0",
-  "author": "Pranav Jha <jha.pranav.s@gmail.com> (https://github.com/pranavjha)",
+  "author": "Ravi Sruthi <sruthiin92@gmail.com> (https://github.com/smravi)",
   "contributors": [
     {
       "name": "sruthiravi",
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pranavjha/grunt-docco-plus.git"
+    "url": "https://github.com/smravi/grunt-docco-plus.git"
   },
   "bugs": {
-    "url": "https://github.com/pranavjha/grunt-docco-plus/issues"
+    "url": "https://github.com/smravi/grunt-docco-plus/issues"
   },
   "licenses": [
     {
