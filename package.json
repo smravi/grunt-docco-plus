@@ -1,24 +1,32 @@
 {
   "name": "grunt-docco-plus",
-  "description": "Grunt Docco Plus plugin.",
-  "version": "0.0.0",
-  "homepage": "https://github.com/pranavjha/grunt-docco-plus",
+  "description": "Grunt plugin for docco-plus",
+  "homepage": "https://github.com/sruthiravi/grunt-docco-plus",
+  "version": "1.0.0",
+  "author": "Ravi Sruthi <sruthiin92@gmail.com> (https://github.com/smravi)",
+  "contributors": [
+    {
+      "name": "sruthiravi",
+      "email": "sruthiin92@gmail.com"
+    },
+    {
+      "name": "jhapranav",
+      "email": "jha.pranav.s@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pranavjha/grunt-docco-plus.git"
+    "url": "https://github.com/smravi/grunt-docco-plus.git"
   },
   "bugs": {
-    "url": "https://github.com/pranavjha/grunt-docco-plus/issues"
+    "url": "https://github.com/smravi/grunt-docco-plus/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://https://github.com/pranavjha/grunt-docco-plus/blob/master/LICENSE"
+      "url": "http://opensource.org/licenses/mit-license.php"
     }
   ],
-  "engines": {
-    "node": "*"
-  },
   "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt test"
@@ -36,6 +44,12 @@
     "grunt": "~0.4.0"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "documentation",
+    "docs",
+    "docco",
+    "folder",
+    "generator",
+    "literate"
   ]
 }
