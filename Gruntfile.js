@@ -27,58 +27,124 @@ var jshintOptions = {
   nonbsp: true,
   freeze: true
 };
-module.exports = function (grunt) {
+module.exports = function(grunt) {
   // loading the npm task
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-docco');
+  require('./tasks/docco-plus')(grunt);
   grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-istanbul');
+  grunt.loadNpmTasks('grunt-coveralls');
+  grunt.loadNpmTasks('grunt-env');
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    jshint: {
-      lib: {
-        src: [
-          'lib/**/*.js',
-          'Gruntfile.js',
-          'package.json'
+        pkg: grunt.file.readJSON('package.json'),
+        clean: [
+          '.coverage',
+          '.test',
+          '.cache'
         ],
-        options: jshintOptions
-      }
-    },
-    docco: {
-      debug: {
-        src: [
-          'lib/**',
-          'README.md'
-        ],
-        options: {
-          output: '.docs/'
+        jshint: {
+          lib: {
+            src: [
+              'lib/**/*.js',
+              'Gruntfile.js',
+              'package.json'
+            ],
+            options: jshintOptions
+          }
+        },
+        // Configure a mochaTest task
+        mochaTest: {
+          test: {
+            options: {
+              reporter: 'spec',
+              timeout: 50000
+            },
+            src: [
+              'test/*.js'
+            ]
+          }
+        },
+        instrument: {
+          files: [
+            'lib/**/*.js'
+          ],
+          options: {
+            lazy: false,
+            basePath: '.coverage/instrument/'
+          }
+        },
+        storeCoverage: {
+          options: {
+            dir: '.coverage/json/'
+          }
+        },
+        makeReport: {
+          src: '.coverage/json/*.json',
+          options: {
+            type: 'lcov',
+            dir: '.coverage/reports/',
+            print: 'detail'
+          }
+        },
+        env: {
+          coverage: {
+            APP_DIR_FOR_CODE_COVERAGE: '.coverage/instrument/'
+          }
+        },
+        'docco-plus': {
+          debug: {
+            src: [
+              'lib/**',
+              'test/**',
+              '*.js',
+              '*.md'
+            ],
+            options: {
+              output: '.docs/'
+            }
+          }
+        },
+        'gh-pages': {
+          options: {
+            base: '.docs',
+            // GH_TOKEN is the environment variable holding the access token for the repository
+            repo: 'https://' + process.env.GH_TOKEN + '@github.com/' + process.env.TRAVIS_REPO_SLUG + '.git',
+            clone: '.gh_pages',
+            message: 'build #' + process.env.TRAVIS_BUILD_NUMBER + ' travis commit',
+            // This configuration will suppress logging and sanitize error messages.
+            silent: true,
+            user: {
+              name: 'travis',
+              email: 'travis@travis-ci.com'
+            }
+          },
+          src: [
+            '**'
+          ]
+        },
+        coveralls: {
+          lcov: {
+            // LCOV coverage file relevant to every target
+            src: '.coverage/reports/lcov.info'
+          }
         }
       }
-    },
-    'gh-pages': {
-      options: {
-        base: '.docs',
-        // GH_TOKEN is the environment variable holding the access token for the repository
-        repo: 'https://' + process.env.GH_TOKEN + '@github.com/smravi/grunt-docco-plus.git',
-        clone: '.gh_pages',
-        message: 'auto commit chai-a11y on <%= grunt.template.today("yyyy-mm-dd") %>',
-        // This configuration will suppress logging and sanitize error messages.
-        silent: true,
-        user: {
-          name: 'Pranav Jha',
-          email: 'jha.pranav.s@gmail.com'
-        }
-      },
-      src: [
-        '**'
-      ]
-    }
-  });
+  );
   grunt.registerTask('test', [
     'jshint'
   ]);
+  grunt.registerTask('coverage', [
+    'instrument',
+    'env:coverage',
+    'mochaTest',
+    'storeCoverage',
+    'makeReport',
+    'coveralls:lcov'
+  ]);
   grunt.registerTask('document', [
-    'docco'
+    'docco-plus'
   ]);
 };
