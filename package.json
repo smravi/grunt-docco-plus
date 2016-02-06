@@ -1,55 +1,61 @@
 {
-  "name": "grunt-docco-plus",
-  "description": "Grunt plugin for docco-plus",
-  "homepage": "https://github.com/sruthiravi/grunt-docco-plus",
-  "version": "1.0.0",
-  "author": "Ravi Sruthi <sruthiin92@gmail.com> (https://github.com/smravi)",
-  "contributors": [
-    {
-      "name": "sruthiravi",
-      "email": "sruthiin92@gmail.com"
+    "name": "grunt-docco-plus",
+    "description": "Grunt plugin for docco-plus",
+    "homepage": "http://smravi.github.io/grunt-docco-plus",
+    "version": "1.0.1",
+    "author": "Ravi Sruthi <sruthiin92@gmail.com> (https://github.com/smravi)",
+    "contributors": [
+        {
+            "name": "sruthiravi",
+            "email": "sruthiin92@gmail.com"
+        },
+        {
+            "name": "jhapranav",
+            "email": "jha.pranav.s@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/smravi/grunt-docco-plus.git"
     },
-    {
-      "name": "jhapranav",
-      "email": "jha.pranav.s@gmail.com"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/smravi/grunt-docco-plus.git"
-  },
-  "bugs": {
-    "url": "https://github.com/smravi/grunt-docco-plus/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/mit-license.php"
-    }
-  ],
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "grunt test"
-  },
-  "dependencies": {
-    "docco-plus": "*"
-  },
-  "devDependencies": {
-    "grunt": "^0",
-    "grunt-contrib-jshint": "^0",
-    "grunt-docco": "^0",
-    "grunt-gh-pages": "^0"
-  },
-  "peerDependencies": {
-    "grunt": "~0.4.0"
-  },
-  "keywords": [
-    "gruntplugin",
-    "documentation",
-    "docs",
-    "docco",
-    "folder",
-    "generator",
-    "literate"
-  ]
+    "bugs": {
+        "url": "https://github.com/smravi/grunt-docco-plus/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "main": "Gruntfile.js",
+    "scripts": {
+        "test": "grunt test"
+    },
+    "dependencies": {
+        "docco-plus": "*"
+    },
+    "devDependencies": {
+        "grunt": "^0",
+        "grunt-contrib-clean": "^0",
+        "grunt-contrib-jshint": "^0",
+        "grunt-coveralls": "^1.0.0",
+        "grunt-env": "^0.4.4",
+        "grunt-gh-pages": "^1.0.0",
+        "grunt-istanbul": "^0.6.1",
+        "grunt-mocha-test": "^0",
+        "sinon": "^1.17.3",
+        "sinon-chai": "^2.8.0"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.0"
+    },
+    "keywords": [
+        "gruntplugin",
+        "documentation",
+        "docs",
+        "docco",
+        "folder",
+        "generator",
+        "literate"
+    ]
 }
