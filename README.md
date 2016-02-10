@@ -1,10 +1,13 @@
-[![Build Status](https://travis-ci.org/smravi/grunt-docco-plus.svg)](https://travis-ci.org/smravi/grunt-docco-plus)
-[![Code Climate](https://codeclimate.com/github/smravi/grunt-docco-plus/badges/gpa.svg)](https://codeclimate.com/github/smravi/grunt-docco-plus)
-[![Documentation](https://img.shields.io/badge/documentation-plus-green.svg?style=flat)](http://smravi.github.io/grunt-docco-plus/)
+[![Build Status](https://img.shields.io/travis/smravi/grunt-docco-plus.svg?style=flat-square)](https://travis-ci.org/smravi/grunt-docco-plus)
+[![Code Climate](https://img.shields.io/codeclimate/github/smravi/grunt-docco-plus.svg?style=flat-square)](https://codeclimate.com/github/smravi/grunt-docco-plus)
+[![Documentation](https://img.shields.io/badge/documentation-plus-green.svg?style=flat-square)](http://smravi.github.io/grunt-docco-plus/)
 
-[![Dependency Status](https://david-dm.org/smravi/grunt-docco-plus.svg)](https://david-dm.org/smravi/grunt-docco-plus)
-[![devDependency Status](https://david-dm.org/smravi/grunt-docco-plus/dev-status.svg)](https://david-dm.org/smravi/grunt-docco-plus#info=devDependencies)
-[![peerDependency Status](https://david-dm.org/smravi/grunt-docco-plus/peer-status.svg)](https://david-dm.org/smravi/grunt-docco-plus#info=peerDependencies)
+[![Dependency Status](https://img.shields.io/david/smravi/grunt-docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/grunt-docco-plus)
+[![devDependency Status](https://img.shields.io/david/dev/smravi/grunt-docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/grunt-docco-plus#info=devDependencies)
+[![peerDependency Status](https://img.shields.io/david/peer/smravi/grunt-docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/grunt-docco-plus#info=peerDependencies)
+
+[![NPM](https://nodei.co/npm/grunt-docco-plus.png)](https://nodei.co/npm/grunt-docco-plus/)
+[![NPM](https://nodei.co/npm-dl/grunt-docco-plus.png?months=9&height=1)](https://nodei.co/npm/grunt-docco-plus/)
 
 
 # grunt-docco-plus
