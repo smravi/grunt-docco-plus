@@ -97,8 +97,7 @@ module.exports = function(grunt) {
             'docco-plus': {
                 debug: {
                     src: [
-                        'lib/**',
-                        'test/**',
+                        'tasks/**',
                         '*.js',
                         '*.md'
                     ],
