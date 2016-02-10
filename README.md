@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/smravi/grunt-docco-plus.svg)](https://travis-ci.org/smravi/grunt-docco-plus)
 [![Code Climate](https://codeclimate.com/github/smravi/grunt-docco-plus/badges/gpa.svg)](https://codeclimate.com/github/smravi/grunt-docco-plus)
-[![Documentation](https://img.shields.io/badge/docco-plus-green.svg?style=flat)](http://smravi.github.io/grunt-docco-plus/)
+[![Documentation](https://img.shields.io/badge/documentation-plus-green.svg?style=flat)](http://smravi.github.io/grunt-docco-plus/)
 
 [![Dependency Status](https://david-dm.org/smravi/grunt-docco-plus.svg)](https://david-dm.org/smravi/grunt-docco-plus)
 [![devDependency Status](https://david-dm.org/smravi/grunt-docco-plus/dev-status.svg)](https://david-dm.org/smravi/grunt-docco-plus#info=devDependencies)
