@@ -6,9 +6,6 @@
 [![devDependency Status](https://img.shields.io/david/dev/smravi/grunt-docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/grunt-docco-plus#info=devDependencies)
 [![peerDependency Status](https://img.shields.io/david/peer/smravi/grunt-docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/grunt-docco-plus#info=peerDependencies)
 
-[![NPM](https://nodei.co/npm/grunt-docco-plus.png)](https://nodei.co/npm/grunt-docco-plus/)
-[![NPM](https://nodei.co/npm-dl/grunt-docco-plus.png?months=9&height=1)](https://nodei.co/npm/grunt-docco-plus/)
-
 
 # grunt-docco-plus
 
