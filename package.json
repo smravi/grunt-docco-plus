@@ -2,7 +2,7 @@
     "name": "grunt-docco-plus",
     "description": "Grunt plugin for docco-plus",
     "homepage": "http://smravi.github.io/grunt-docco-plus",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "author": "Ravi Sruthi <sruthiin92@gmail.com> (https://github.com/smravi)",
     "contributors": [
         {
@@ -32,7 +32,7 @@
         "test": "grunt test"
     },
     "dependencies": {
-        "docco-plus": "*"
+        "docco-plus": "^2.0.0"
     },
     "devDependencies": {
         "grunt": "^0",
